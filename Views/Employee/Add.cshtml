@@ -5,13 +5,13 @@
         <form asp-action="AddEmployee" asp-controller="Employee" method="post" class="align-center">
 
             <label>Name</label>
-            <input  type="text" asp-for="Name"/>
+            <input  type="text" asp-for="Name" required/>
             <label>AdharNo.</label>
-            <input type="number" asp-for="AdharNo" />
+            <input type="number" asp-for="AdharNo" required/>
             <label>Role</label>
-            <input type="text"  asp-for="Role"/>
+            <input type="text"  asp-for="Role" required/>
             <label>Email</label>
-            <input type="email" asp-for="Email"/>
+            <input type="email" asp-for="Email" required/>
             <input type="submit" />
         </form>
     </div>
