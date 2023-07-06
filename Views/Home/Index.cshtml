@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+
+}
+@model List<shivamTask.Models.ViewModel.AddEmployee> 
+
+<div class="text-center">
+    Welcome To My Employee Website
+      <a></a> <br />
+    <button> <a asp-action="Add" asp-controller="Employee">Add Employee</a>
+    </button>
+
+
+     <br />
+
+     <div class="text-center">
+
+         <h1>All My employees</h1>
+        @foreach(var record in Model)
+        {   <div class="text-center bg-success text-white">
+            <h1>@record.Name       </h1>
+            <h2>@record.Email</h2>
+            <h3>@record.AdharNo</h3>
+            <h4>@record.Role</h4>
+ </div>
+        }
+    </div>
+</div>
